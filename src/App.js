@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Info from "./Pages/Info";
+import Arbeid from "./Pages/Arbeid";
+import Footer from "./Pages/Footer";
+import Hero from "./Pages/Hero";
+import Navbar from "./Pages/Navbar";
+import "typeface-roboto";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Info />
+      <Arbeid />
+
+      {/* <Routes>
+        <Route path="/" element={<Arbeid />} />
+        <Route path="Arbeid" element={<Arbeid />} />
+        <Route path="Info" element={<Info />} />
+      </Routes> */}
+      <Footer />
+    </>
   );
 }
 

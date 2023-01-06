@@ -1,0 +1,114 @@
+/*______________________________________________________________________________ 
+                                Om (About) [Info.js]
+______________________________________________________________________________  */
+.imgRound {
+  width: 20%;
+  margin: auto;
+  display: block;
+  padding: 2rem;
+}
+
+.info {
+  padding-top: 35px;
+}
+
+.infoContainer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.info p {
+  color: white;
+}
+
+.infoTextBox p:first-child {
+  font-weight: 600;
+  color: white;
+}
+
+.infoTextBox p:nth-child(2) {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.infoTextBox p:nth-child(3) {
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+}
+
+.infoTextBox p:nth-child(4) {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: black;
+}
+
+.infoTextBox {
+  width: 450px;
+  height: auto;
+  text-align: center;
+  line-height: 30px;
+  background-color: var(--box-color1);
+  border-radius: 20px;
+  box-shadow: 4px 4px var(--box-shadow);
+  border: solid 3px var(--box-border);
+}
+
+.aboutImage {
+  background-color: var(--box-color1);
+  object-fit: contain;
+  width: 450px;
+  height: 520px;
+  border: solid 2px var(--box-border);
+  box-shadow: 4px 4px var(--box-shadow);
+  border-radius: 20px;
+}
+
+.cvButttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.cvButton {
+  font-size: 20px;
+  background: var(--button-color1);
+  border: solid 2px var(--box-border);
+  box-shadow: 4px 4px var(--box-shadow);
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 20px;
+}
+
+.cvButton:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 940px) {
+  .info > p {
+    padding: 1rem;
+  }
+
+  .infoTextBox > p {
+    padding: 1rem;
+  }
+
+  .imgRound {
+    width: 40%;
+  }
+
+  .infoContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoTextBox {
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+  .aboutImage {
+    width: 80%;
+  }
+}

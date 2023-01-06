@@ -1,0 +1,143 @@
+/* Overlay for background image */
+.hero {
+  background: var(--overlay);
+  color: #fff;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background: url("../Images/hero.png") no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1245;
+  margin-top: auto;
+  padding: 1rem;
+}
+
+.hero .content a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero .content p {
+  font-family: ("Roboto");
+  margin: 0.5rem;
+  padding-left: 25%;
+  padding-left: 10%;
+}
+
+/* Get different styled p tags using child elements */
+.hero .content p:first-child {
+  font-weight: 700;
+  margin-top: 5rem;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.hero .content p:nth-child(2) {
+  font-size: 1.5rem;
+  font-style: bold;
+}
+
+.hero .content p:nth-child(3) {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero .content p:nth-child(4) {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.hero .button {
+  margin: 1rem 0;
+}
+
+.hero .content button {
+  margin-top: 2rem;
+  margin-left: 10%;
+}
+
+.mobileButton {
+  display: none;
+}
+
+/* For mobile and smaller screens below 940 */
+@media screen and (max-width: 940px) {
+  .desktopButton {
+    display: none;
+  }
+
+  .mobileButton {
+    display: contents;
+  }
+
+  .hero {
+    padding-left: 5%;
+  }
+
+  .hero::before {
+    /* content: "";
+    background: url("../Images/hero.png") no-repeat cover; */
+    background-position: 5% 20%;
+    /* height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; */
+  }
+
+  .hero .content {
+    line-height: 2rem;
+  }
+
+  .hero .content p {
+    margin: 0.2rem;
+    padding: 0.1rem;
+  }
+
+  .hero .content p:first-child {
+    margin-top: 1rem;
+    font-style: italic;
+  }
+
+  .hero .content p:nth-child(2) {
+    font-size: 1.3rem;
+  }
+
+  .hero .content p:nth-child(3) {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .hero .content {
+    line-height: 1.2rem;
+    /* height: 100vh; */
+  }
+
+  .hero .content p:nth-child(1) {
+    font-size: 1rem;
+  }
+
+  .hero .content p:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .hero .content p:nth-child(3) {
+    font-size: 1rem;
+  }
+}

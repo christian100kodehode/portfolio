@@ -1,0 +1,164 @@
+.header {
+  background: var(--box-color1);
+  font-family: Megalomaniac;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+}
+
+.header ul {
+  text-decoration: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  margin-right: 5rem;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* max-width: 1240px; */
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.625);
+}
+
+.header .navbar img {
+  height: 60px;
+  width: auto;
+  padding: 0.3rem 1rem;
+  cursor: pointer;
+}
+
+.Logo {
+  filter: drop-shadow(2px 1px 2px var(--primary-color));
+  /* filter: drop-shadow(px 1px 2px var(--secondary-color)); */
+}
+
+.header .nav-menu {
+  display: flex;
+}
+
+.header .nav-item {
+  padding-right: 2rem;
+  font-weight: 400;
+  list-style: none;
+}
+
+.nav-item a {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+/* color font on hover for navbar items */
+.nav-item a:hover {
+  color: rgb(141, 140, 140);
+  padding-bottom: 1px;
+  border-bottom: solid 3px var(--primary-color);
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.phone {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.MobileMenu {
+  display: none;
+}
+@media screen and (max-width: 940px) {
+  .header {
+    height: 88px;
+    max-width: 100%;
+  }
+  .header .navbar {
+    height: 88px;
+    max-width: 100%;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .header ul {
+    font-size: 1.5rem;
+    margin-right: 5rem;
+    margin-top: 0;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+  .hamburger-menu:hover {
+    background-color: var(--primary-color);
+  }
+  .nav-menu {
+    position: fixed;
+    left: +100%;
+    top: 88px;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.535);
+    width: 100%;
+    height: 1.8rem;
+    z-index: 10;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .nav-menu.active {
+    left: 0;
+    padding: 0;
+  }
+
+  .nav-item a {
+    font-family: "Roboto";
+    margin: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .header .navbar img {
+    height: 55px;
+  }
+
+  .phone {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .nav-item a:hover {
+    color: rgb(141, 140, 140);
+    padding-bottom: 1px;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  /* .RingText {
+    display: none;
+  } */
+
+  .Top a {
+    padding: 0;
+    font-size: 0.9em;
+  }
+  .Top p {
+    padding: 0;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .openText {
+    display: none;
+  }
+
+  .closedText {
+    display: none;
+  }
+}
