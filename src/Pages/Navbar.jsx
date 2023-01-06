@@ -1,8 +1,8 @@
 import Logo from "../Images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
-import { useState, useEffect } from "react";
-import { Link, Scroll } from "react-scroll";
+import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);

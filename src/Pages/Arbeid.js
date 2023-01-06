@@ -3,7 +3,6 @@ import { projectsGithub } from "../Txt/projectConst";
 import "./Arbeid.css";
 
 export default function Launch() {
-  const data = projectsGithub;
   console.log(projectsGithub);
 
   return (

@@ -1,5 +1,6 @@
 /* Overlay for background image */
 .hero {
+  font-family: sans-serif;
   background: var(--overlay);
   color: #fff;
   height: 100vh;
@@ -23,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1245;
+  max-width: 1245px;
   margin-top: auto;
   padding: 1rem;
 }
@@ -34,7 +35,6 @@
 }
 
 .hero .content p {
-  font-family: ("Roboto");
   margin: 0.5rem;
   padding-left: 25%;
   padding-left: 10%;
