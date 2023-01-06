@@ -4,7 +4,7 @@ import Arbeid from "./Pages/Arbeid";
 import Footer from "./Pages/Footer";
 import Hero from "./Pages/Hero";
 import Navbar from "./Pages/Navbar";
-import "typeface-roboto";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -13,13 +13,12 @@ function App() {
       <Hero />
       <Info />
       <Arbeid />
-
-      {/* <Routes>
-        <Route path="/" element={<Arbeid />} />
-        <Route path="Arbeid" element={<Arbeid />} />
-        <Route path="Info" element={<Info />} />
-      </Routes> */}
       <Footer />
+      {/* Add a route for anything wrong entered, instead of showing an error we go to top of page */}
+      <Routes>
+        <Route index element={<Navbar />} />
+        <Route path="*" element={<Navbar />} />
+      </Routes>
     </>
   );
 }
