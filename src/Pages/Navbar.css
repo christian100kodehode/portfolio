@@ -30,8 +30,6 @@
 }
 
 .header .navbar img {
-  height: 60px;
-  width: auto;
   padding: 0.3rem 1rem;
   cursor: pointer;
 }
@@ -123,9 +121,9 @@
     font-size: 1.4rem;
   }
 
-  .header .navbar img {
+  /* .header .navbar img {
     height: 55px;
-  }
+  } */
 
   .phone {
     color: white;

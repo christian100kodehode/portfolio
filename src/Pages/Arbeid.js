@@ -15,7 +15,7 @@ export default function Launch() {
           <div className="projectContainer" key={item.id}>
             <div className="projectCard">
               <a href={item.pagelink} target="_blank" rel="noreferrer">
-                <img src={item.image} alt={item.description} />
+                <img src={item.image} alt={item.headline} />
               </a>
             </div>
             <div className="projectCardBottom">
