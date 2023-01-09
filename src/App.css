@@ -5,7 +5,7 @@ ______________________________________________________________________________  
 :root {
   --box-color1: #676767;
   --box-border: rgb(52, 52, 52);
-  --box-shadow: rgb(117, 113, 113);
+  --box-shadow: rgba(117, 113, 113, 0.304);
   --button-color1: rgb(162, 162, 162);
   --back-gradient: linear-gradient(230.5deg, #434242 9.98%, rgba(94, 83, 83, 0) 89.57%);
   --primary-color: #6fa209;
@@ -22,17 +22,12 @@ ______________________________________________________________________________  
                                     Body
 ______________________________________________________________________________  */
 
-@font-face {
-  font-family: "Megalomaniac";
-  src: local("Megalomaniac"), url(./Fonts/Megalomaniac.ttf) format("truetype");
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: var(--back-gradient);
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
   line-height: 1.2;

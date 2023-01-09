@@ -1,7 +1,7 @@
 import drumImg from "../Images/js-drum.jpg";
 import pokeImg from "../Images/React-pokeApi.jpg";
 import kleppevarden from "../Images/web-kleppevarden.jpg";
-import summerShop from "../Images/summerShop.png";
+import summerShop from "../Images/summerShop.jpg";
 import toDoList from "../Images/toDoList.jpg";
 import lynlakkImg from "../Images/LynlakkImg.jpg";
 

@@ -2,7 +2,7 @@ import Textstyle1 from "../Styles/Textstyle1";
 import { headLineMain } from "../Txt/txtConst";
 import krizUte from "../Images/krizUte.png";
 import CV from "../Images/C_Westbye_CV.pdf";
-import krizRund from "../Images/krizRund.png";
+import krizRund from "../Images/kriz.jpg";
 import "./Info.css";
 
 export default function info() {

@@ -6,6 +6,7 @@ ______________________________________________________________________________  
   margin: auto;
   display: block;
   padding: 2rem;
+  border-radius: 50%;
 }
 
 .info {

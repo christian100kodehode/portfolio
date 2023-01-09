@@ -1,6 +1,7 @@
 .header {
   background: var(--box-color1);
-  font-family: Megalomaniac;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "megalomaniac";
   position: fixed;
   height: auto;
   width: 100%;
