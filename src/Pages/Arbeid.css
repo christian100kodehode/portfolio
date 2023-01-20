@@ -4,6 +4,8 @@
 ______________________________________________________________________________  */
 
 .container {
+  max-width: 1000px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -13,23 +15,45 @@ ______________________________________________________________________________  
   margin-bottom: 5rem;
 }
 
-.arbeidText {
+.arbeidText > p {
   padding-top: 45px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.sisteProsjekter > p {
+  border-bottom: solid var(--primary-color) 0.5rem;
+  padding: 0;
+  font-family: "megalomaniac";
+  font-size: 4rem;
+  color: white;
+  margin: 5rem 0 2rem;
+}
+
+.sisteProsjekter {
+  display: flex;
+  justify-content: center;
+  height: 11.6rem;
+}
+
+.ProsjektText {
+  display: flex;
+  justify-content: center;
 }
 
 .projectContainer {
   display: flex;
   flex-direction: column;
-  border: solid 3px var(--box-border);
-  width: 300px;
+  width: 250px;
   height: 270px;
   margin: 20px;
   border-radius: 20px;
-  box-shadow: 4px 4px var(--box-shadow);
+  box-shadow: 1px 2px var(--box-shadow);
 }
 
-.projectCardBottom > a:link {
+.projectCardBottom > a {
   text-decoration: none;
+  color: white;
 }
 
 .projectContainer:hover {
@@ -38,7 +62,7 @@ ______________________________________________________________________________  
 
 .projectCard {
   border-radius: 17px;
-  width: 300px;
+  width: 250px;
   height: 200px;
   display: flex;
   justify-content: center;
@@ -61,10 +85,7 @@ ______________________________________________________________________________  
 .projectCardBottom {
   line-height: 0%;
   padding-left: 10px;
-  background-color: rgba(255, 255, 255, 0.706);
   border-radius: 17px;
-  border: solid 1px black;
-  box-shadow: 1px 1px var(--box-shadow);
 }
 
 .projectCardBottom > h4 {
@@ -72,5 +93,5 @@ ______________________________________________________________________________  
 }
 
 .projectContainer a:hover {
-  color: red;
+  color: var(--primary-dark);
 }

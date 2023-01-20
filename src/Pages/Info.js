@@ -7,12 +7,20 @@ import "./Info.css";
 
 export default function info() {
   return (
-    <>
+    <div>
       <div id="info" className="info">
-        <Textstyle1>
-          <p>{headLineMain.txt.main}</p>
-        </Textstyle1>{" "}
-        <img src={krizRund} alt="Christian Westbye" className="imgRound" />
+        <div className="infoHeader">
+          <p classname="infoOmmeg">Om meg</p>
+        </div>
+        <div className="infoComponent">
+          <p>
+            {headLineMain.txt.main}
+
+            {headLineMain.txt.main2}
+          </p>
+          <img src={krizRund} alt="Christian Westbye" className="imgRound" />
+        </div>
+
         <div className="infoContainer">
           <img className="aboutImage" src={krizUte} alt="Me Outside.." />
           <div className="infoTextBox">
@@ -24,10 +32,10 @@ export default function info() {
         </div>
         <div className="cvButttonContainer">
           <a href={CV}>
-            <button className="cvButton">CV ⬇️</button>
+            <button className="button">Last ned CV ⬇️</button>
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }

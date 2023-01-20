@@ -1,6 +1,10 @@
+.navbar {
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 10px;
+}
+
 .header {
-  background: var(--box-color1);
-  /* font-family: "Roboto", sans-serif; */
   font-family: "megalomaniac";
   position: fixed;
   height: auto;

@@ -1,8 +1,10 @@
 /* Overlay for background image */
 .hero {
+  max-width: 1000px;
+  margin: auto;
   font-family: "Roboto";
   background: var(--overlay);
-  color: #fff;
+  /* color: #fff; */
   height: 100vh;
   width: 100%;
   position: relative;
@@ -85,10 +87,6 @@
 
   .mobileButton {
     display: contents;
-  }
-
-  .hero {
-    padding-left: 5%;
   }
 
   .hero::before {

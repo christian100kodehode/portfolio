@@ -3,6 +3,8 @@
 ______________________________________________________________________________  */
 
 .FooterLinks {
+  max-width: 1000px;
+  margin: auto;
   font-family: Roboto;
   background: var(--box-color1);
   height: 6rem;
@@ -19,6 +21,7 @@ ______________________________________________________________________________  
   object-fit: contain;
   padding: 0 40px;
   filter: invert(1);
+  border-radius: 50%;
 }
 
 .FooterLinks p {

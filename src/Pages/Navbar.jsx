@@ -26,12 +26,12 @@ const Navbar = () => {
         {/* Hamburger Menu show contents or not */}
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="info" onClick={closeMenu} spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="info" onClick={closeMenu} spy={true} smooth={true} offset={-50} duration={500}>
               Om
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="Arbeid" onClick={closeMenu} spy={true} smooth={true} offset={-70} duration={500}>
+            <Link to="Arbeid" onClick={closeMenu} spy={true} smooth={true} offset={-10} duration={500}>
               Prosjekter
             </Link>
           </li>
