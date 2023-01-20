@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export default styled.p`
   text-align: center;
-  margin: 1% 10% 5%;
   font-style: italic;
   font-size: 1.2rem;
   line-height: 2rem;
