@@ -10,7 +10,7 @@ export default function info() {
     <div>
       <div id="info" className="info">
         <div className="infoHeader">
-          <p classname="infoOmmeg">Om meg</p>
+          <p className="infoOmmeg">Om meg</p>
         </div>
         <div className="infoComponent">
           <p>

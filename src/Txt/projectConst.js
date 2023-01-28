@@ -50,7 +50,7 @@ export const projectsGithub = [
   {
     id: "50",
     image: kleppevarden,
-    headline: "Kleppevarden Fixed Scroll",
+    headline: "Kleppevarden Fixed",
     tech: "CSS + HTML",
     pagelink: "https://christian100kodehode.github.io/Kleppevarden-Fixed-Scrolling/",
     sourcelink: "https://github.com/christian100kodehode/Kleppevarden-Fixed-Scrolling",

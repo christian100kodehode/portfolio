@@ -23,7 +23,7 @@
 }
 
 .hero .content {
-  height: 80%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,7 +72,7 @@
 
 .hero .content button {
   margin-top: 2rem;
-  margin-left: 10%;
+  margin-left: 5rem;
 }
 
 .mobileButton {
@@ -81,6 +81,10 @@
 
 /* For mobile and smaller screens below 940 */
 @media screen and (max-width: 940px) {
+  .hero .content button {
+    margin: 2rem 0;
+  }
+
   .desktopButton {
     display: none;
   }
