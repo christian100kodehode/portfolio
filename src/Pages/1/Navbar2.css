@@ -1,83 +1,50 @@
-.navbar {
-  display: flex;
-  max-width: 1000px;
-  justify-content: space-between;
-  align-items: center;
-  height: 5rem;
+.header {
+  background-color: rgb(0, 0, 0, 0.9);
+  position: fixed;
+  height: 115px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: 0.3s ease-in;
+  /* overflow: hidden; */
 }
 
-.header {
-  font-family: megalomaniac;
-  height: auto;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  transition: 0.3s ease-in;
-  width: 100%;
-  z-index: 1;
-  margin: auto;
-  font-family: "megalomaniac";
-  position: fixed;
-  width: 100%;
-  height: auto;
-  left: 0;
-  top: 0;
-  transition: 0.3s ease-in;
-  overflow: hidden;
+.HeaderContainer {
+  display: flex;
+  align-items: center;
 }
 
 .header .navbar {
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.625);
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: auto;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.8px);
-  -webkit-backdrop-filter: blur(4.8px);
-}
-
-.header ul {
-  text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 2.5rem;
-  margin-right: 5rem;
+  width: 95%;
+  padding: 0.1rem 0.5rem;
+  background-color: rgba(0, 0, 0, 0.625);
 }
 
 .header .navbar img {
-  padding: 0.3rem 1rem;
+  margin-top: 0.2rem;
   cursor: pointer;
-}
-
-.header .navbar .nav-header {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: white;
-  list-style: none;
-  cursor: pointer;
-}
-
-.navTitle {
-  font-size: 0.98rem;
-
-  color: white;
-  letter-spacing: 0.12rem;
-  position: absolute;
-}
-
-.navTitle {
-  display: none;
-}
-
-.nav-header:hover .navTitle {
-  display: block;
 }
 
 .Logo {
   filter: drop-shadow(2px 1px 2px var(--primary-color));
+  padding: 0 2rem;
+  height: 75px;
+  width: auto;
   /* filter: drop-shadow(px 1px 2px var(--secondary-color)); */
+}
+
+.FbIcon:hover {
+  border: var(--primary-color) 2px solid;
+}
+
+.FbIcon {
+  height: 55px;
+  width: auto;
 }
 
 .header .nav-menu {
@@ -87,8 +54,7 @@
 
 .header .nav-item {
   padding-right: 2rem;
-  font-weight: 400;
-  list-style: none;
+  font-weight: 600;
 }
 
 .nav-item a {
@@ -105,6 +71,24 @@
 
 .hamburger-menu {
   display: none;
+  cursor: pointer;
+}
+
+.Top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(49, 52, 52);
+  height: 28px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+}
+
+.Top p {
+  margin: 0.1rem;
+  font-size: 1em;
 }
 
 .phone {
@@ -118,25 +102,20 @@
 }
 @media screen and (max-width: 940px) {
   .header {
-    height: auto;
+    height: 95px;
     max-width: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
   }
   .header .navbar {
-    height: 88px;
     max-width: 100%;
-    justify-content: center;
-    flex-direction: row;
   }
 
-  .header ul {
-    font-size: 1.5rem;
-    margin-right: 5rem;
-    margin-top: 0;
+  .Logo {
+    padding: 0;
   }
-
   .hamburger-menu {
     display: block;
-    margin-bottom: 1.2rem;
+    padding: 1rem;
   }
   .hamburger-menu:hover {
     background-color: var(--primary-color);
@@ -144,29 +123,50 @@
   .nav-menu {
     position: fixed;
     left: +100%;
-    top: 55px;
+    top: 95px;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.535);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
-    height: 2rem;
-    z-index: 0;
+    height: 1.8rem;
+    z-index: 10;
     justify-content: center;
+    text-align: center;
     transition: 0.3s;
   }
   .nav-menu.active {
     left: 0;
-    padding: 0;
   }
 
   .nav-item a {
-    font-family: "megalomaniac";
     margin: 1rem;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
-  /* .header .navbar img {
+  .header .navbar img {
     height: 55px;
-  } */
+  }
+
+  .Top {
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(49, 52, 52);
+    height: 25px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: white;
+  }
+  .Top p {
+    padding: 0;
+    font-size: 0.8em;
+    overflow: hidden;
+  }
+
+  .Top a {
+    padding: 0;
+    font-size: 0.8em;
+    /* overflow: hidden; */
+  }
 
   .phone {
     color: white;
@@ -193,6 +193,10 @@
     padding: 0;
     font-size: 0.8em;
   }
+
+  .header .navnbar {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 370px) {
@@ -203,4 +207,11 @@
   .closedText {
     display: none;
   }
+  /* .Top p {
+    overflow: hidden;
+  } */
+
+  /* .Top a {
+    overflow: hidden;
+  } */
 }

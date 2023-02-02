@@ -54,7 +54,7 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 0 2rem;
   border-radius: 50%;
 }
 
@@ -102,15 +102,50 @@
   height: auto;
   text-align: center;
   line-height: 30px;
-  /* background-color: var(--box-color1);
-  border-radius: 20px;
-  box-shadow: 4px 4px var(--box-shadow);
-  border: solid 3px var(--box-border);
-*/
+}
+
+.moreInfo:hover {
+  border-bottom: solid 3px var(--primary-color);
+}
+
+.moreInfo2:hover {
+  border-bottom: solid 3px var(--primary-color);
+}
+
+.moreInfo {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: -1rem 5rem;
+  position: absolute;
+  margin-top: -2rem;
+}
+
+.moreInfo2 {
+  cursor: pointer;
+  display: flex;
+  /* justify-content: center; */
+  margin: 1rem 2rem;
+  position: absolute;
+}
+
+.moreinfoComponent {
+  display: flex;
+  justify-content: center;
+  padding: 0 4rem;
+  flex-direction: column;
+}
+
+.infoLinks {
+  color: black;
+}
+
+.moreinfoComponent > h4 {
+  color: black;
+  text-align: center;
 }
 
 .aboutImage {
-  background-color: var(--box-color1);
   object-fit: contain;
   width: 450px;
   height: 520px;
@@ -134,7 +169,7 @@
   }
 
   .imgRound {
-    width: 12rem;
+    width: 10rem;
   }
 
   .infoContainer {
@@ -149,11 +184,15 @@
   }
 
   .aboutImage {
+    margin-top: 2rem;
     width: 80%;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .moreInfo {
+    margin-bottom: 2rem;
+  }
   .infoComponent {
     display: flex;
     flex-direction: column-reverse;

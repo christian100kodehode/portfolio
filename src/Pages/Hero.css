@@ -1,3 +1,13 @@
+/* #wave {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+.textContent {
+  margin-top: -20rem;
+}
+
 /* Overlay for background image */
 .hero {
   max-width: 1000px;
@@ -23,6 +33,7 @@
 }
 
 .hero .content {
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,6 +92,10 @@
 
 /* For mobile and smaller screens below 940 */
 @media screen and (max-width: 940px) {
+  .textContent {
+    margin-top: -10rem;
+  }
+
   .hero .content button {
     margin: 2rem 0;
   }

@@ -2,22 +2,32 @@ import React from "react";
 import "./Hero.css";
 import { useRef, useLayoutEffect, useEffect } from "react";
 import { motion } from "framer-motion";
+import Sinewave from "../Images/Sinewave";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="content">
-        <p className="textLine1">Programmerer, med IT support bakgrunn (IKT fagbrev).</p>
-        <p className="textLine2">Nyutdannet med fokus på React og JS(X)!</p>
-        <p>Familiemann med kone og to barn.</p>
-
-        <p>Ta kontakt for en prat!</p>
+        <Sinewave />
+        <div className="textContent">
+          <p className="textLine1">Programmerer, med IT support bakgrunn (IKT fagbrev).</p>
+          <p className="textLine2">Nyutdannet med fokus på React og JS(X)!</p>
+          <p>Familiemann med kone og to barn.</p>
+        </div>
+        <p
+        // style={{ paddingLeft: "30%" }}
+        // initial={{ scale: 1 }}
+        // whileHover={{ scale: 3, x: 800 }}
+        // transition={{ delay: 1, duration: 2 }}
+        >
+          Ta kontakt for en prat!
+        </p>
 
         <motion.div
           initial={{
             opacity: 0,
             x: "-250px",
-            width: "10rem",
+            width: "5rem",
           }}
           animate={{
             x: "50%",
