@@ -10,19 +10,13 @@ const Hero = () => {
       <div className="content">
         <Sinewave />
         <div className="textContent">
-          <p className="textLine1">Programmerer, med IT support bakgrunn (IKT fagbrev).</p>
           <p className="textLine2">Nyutdannet med fokus på React og JS(X)!</p>
+          <p className="textLine1">
+            Programmerer, med IT support bakgrunn (IKT fagbrev).
+          </p>
+
           <p>Familiemann med kone og to barn.</p>
         </div>
-        <p
-        // style={{ paddingLeft: "30%" }}
-        // initial={{ scale: 1 }}
-        // whileHover={{ scale: 3, x: 800 }}
-        // transition={{ delay: 1, duration: 2 }}
-        >
-          Ta kontakt for en prat!
-        </p>
-
         <motion.div
           initial={{
             opacity: 0,
@@ -39,11 +33,21 @@ const Hero = () => {
             delay: 0.4,
           }}
         >
-          <a className="mobileButton" href="Tel:96646478" target="_blank" rel="noreferrer">
+          <a
+            className="mobileButton"
+            href="Tel:96646478"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="button"> Ring meg</button>
           </a>
 
-          <a className="desktopButton" href="mailto:krize604@gmail.com" target="_blank" rel="noreferrer">
+          <a
+            className="desktopButton"
+            href="mailto:krize604@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="button"> Kontakt meg</button>
           </a>
         </motion.div>

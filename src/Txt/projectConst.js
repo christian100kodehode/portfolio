@@ -4,10 +4,19 @@ import kleppevarden from "../Images/web-kleppevarden.jpg";
 import summerShop from "../Images/summerShop.jpg";
 import toDoList from "../Images/toDoList.jpg";
 import lynlakkImg from "../Images/LynlakkImg.jpg";
+import horrordelicHQ from "../Images/horrordelicHQ.jpg";
 
 export const projectsGithub = [
   {
     id: "0",
+    image: horrordelicHQ,
+    headline: "Horrordelic Hjemmeside",
+    tech: "React + Public JSON fetch",
+    pagelink: "https://horrordelic.com",
+    sourcelink: "https://github.com/christian100kodehode/Horrordelic_Homepage",
+  },
+  {
+    id: "10",
     image: lynlakkImg,
     headline: "Lynlakk Hjemmeside",
     tech: "React + JS + PHP",
@@ -15,7 +24,7 @@ export const projectsGithub = [
     sourcelink: "https://github.com/christian100kodehode/Lynlakk",
   },
   {
-    id: "10",
+    id: "11",
     image: drumImg,
     headline: "BeatBox jS",
     tech: "jS + HTML + CSS + Gsap",
@@ -47,12 +56,12 @@ export const projectsGithub = [
     pagelink: "https://christian100kodehode.github.io/To-Do-List-JS/",
     sourcelink: "https://github.com/christian100kodehode/To-Do-List-JS",
   },
-  {
-    id: "50",
-    image: kleppevarden,
-    headline: "Kleppevarden Fixed",
-    tech: "CSS + HTML",
-    pagelink: "https://christian100kodehode.github.io/Kleppevarden-Fixed-Scrolling/",
-    sourcelink: "https://github.com/christian100kodehode/Kleppevarden-Fixed-Scrolling",
-  },
+  // {
+  //   id: "50",
+  //   image: kleppevarden,
+  //   headline: "Kleppevarden Fixed",
+  //   tech: "CSS + HTML",
+  //   pagelink: "https://christian100kodehode.github.io/Kleppevarden-Fixed-Scrolling/",
+  //   sourcelink: "https://github.com/christian100kodehode/Kleppevarden-Fixed-Scrolling",
+  // },
 ];

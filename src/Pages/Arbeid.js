@@ -3,7 +3,7 @@ import { projectsGithub } from "../Txt/projectConst";
 import "./Arbeid.css";
 
 export default function Launch() {
-  console.log(projectsGithub);
+  // console.log(projectsGithub);
 
   return (
     <div id="Arbeid" className="arbeidText">

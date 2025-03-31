@@ -8,14 +8,22 @@ export default function Footer() {
     <div>
       <Textstyle2>
         <div className="FooterLinks">
-          <a href="https://github.com/christian100kodehode/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/christian100kodehode/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={githubLink} alt="GitHub Link" />
           </a>
 
-          <a href="https://www.linkedin.com/in/christian-westbye-24b1bb1a2/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.linkedin.com/in/christian-westbye-24b1bb1a2/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={LinkedLink} alt="LinkedIn Link" />
           </a>
-          <p>© Christian Westbye - KodeHode 2022</p>
+          <p>© Christian Westbye - 2023</p>
         </div>
       </Textstyle2>
     </div>
