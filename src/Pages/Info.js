@@ -2,7 +2,7 @@
 import { headLineMain } from "../Txt/txtConst";
 import krizUte from "../Images/krizUte.png";
 import miscgames from "../Images/MiscGames.jpg";
-import CV from "../Images/C_Westbye_CV.pdf";
+// import CV from "../Images/C_Westbye_CV.pdf";
 import krizRund from "../Images/kriz.jpg";
 import krizAmiga from "../Images/krizAmiga.jpg";
 import coversHorrordelic from "../Images/coversHorrordelic.jpg";
@@ -23,16 +23,25 @@ function Info() {
     <div className="moreinfoComponent">
       <img src={krizAmiga} alt="Me and my Amiga (and the Acer 286)." />
       <h4>{headLineMain.txt.about}</h4>
-      <img src={miscgames} alt="Me and the digital minister of Norway. Showcasing the game Fishing Barents Sea, Xbox version." />
+      <img
+        src={miscgames}
+        alt="Me and the digital minister of Norway. Showcasing the game Fishing Barents Sea, Xbox version."
+      />
       <p>
-        Meg, Leif Arne Nilsen fra FRP og Nikolai Astrup fra Høyre, da digital minister i Norge. Her viser jeg spillet "Fishing Barents Sea", Xbox
+        Meg, Leif Arne Nilsen fra FRP og Nikolai Astrup fra Høyre, da digital
+        minister i Norge. Her viser jeg spillet "Fishing Barents Sea", Xbox
         versjonen, da dem var ute og besøkte spillselskaper i Norge.
       </p>
       <h4>{headLineMain.txt.about2}</h4>
-      <img src={coversHorrordelic} alt="Some covers i have made over the years, just a small selection." />
+      <img
+        src={coversHorrordelic}
+        alt="Some covers i have made over the years, just a small selection."
+      />
       <p>
-        Driver også et eget plateselskap der jeg gir ut elektronisk musikk, over 800 sanger og snart 1000 videoer på Youtube. Selskapet heter
-        Horrordelic Records. Lager en mengde cover og flyere for dette prosjektet. {headLineMain.txt.about4}
+        Driver også et eget plateselskap der jeg gir ut elektronisk musikk, over
+        800 sanger og snart 1000 videoer på Youtube. Selskapet heter Horrordelic
+        Records. Lager en mengde cover og flyere for dette prosjektet.{" "}
+        {headLineMain.txt.about4}
       </p>
       <div>
         <Link to="info" spy={true} smooth={true} offset={-50} duration={500}>
@@ -86,7 +95,7 @@ function Info() {
           </div>
         </div>
         <div className="cvButttonContainer">
-          <a href={CV}>
+          <a href="/CV_-_Christian_Westbye_2025.pdf">
             <button className="button">Last ned CV ⬇️</button>
           </a>
         </div>
